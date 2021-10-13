@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+            "hd"
+            "cn"
+            "ft";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 1330px;
+    margin: 21px auto;
+    background-color: #ffffff;
+}
+
+/*---HEAD---*/
+
+#head {
+    grid-area: hd;
+}
+
+#headinfotitle {
+    font-family: Oglavie Unicode, serif;
+    font-size: 3.7em;
+    text-align: center;
+    padding: 15px;
+}
+
+#headinfotxt {
+    font-family: 'Lora', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    color: #787878;
+}
+
+#headmenu {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    margin-top: 40px;
+}
+
+.navul {
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.navulli {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+}
+
+.linkmenu {
+    text-decoration: none;
+    color: #787878;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.linkmenu:hover {
+    color: #d50000;
+}
+
+#content {
+    grid-area: cn;
+}
+
+#footer {
+    grid-area: ft;
+}
+
+/*----------------DONATION--------------*/
+
+.donationinfo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.donationtxtname {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.donationtxtblockname {
+    font-family: 'PT Mono', monospace;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.donationtxtblockoutput {
+    font-family: 'PT Mono', monospace;
+    padding: 10px;
+}
+
+.donationyandexinfo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.donationyandexdataimg {
+    height: 420px;
+    margin-left: 30px;
+}
+
+.donationcardinfo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.donationcarddatatypeimgsrc {
+    width: 200px;
+}
+
+.donationcarddatatype {
+    font-family: 'PT Mono', monospace;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.donationcarddatanumber {
+    font-family: 'PT Mono', monospace;
+    padding: 10px;
+}
+
+.donationcarddatanotation {
+    font-family: 'PT Mono', monospace;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.donationmobileinfo {
+    font-family: 'PT Mono', monospace;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.donationmobiledata {
+    font-family: 'PT Mono', monospace;
+    padding: 10px;
+}
+
+.donationmobilename {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+/*----------------SHEDULE---------------*/
+
+.sheduleinfo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+.sheduledetail {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    padding: 10px;
+    text-align: center;
+}
+
+.sheduletable {
+    width: 100%;
+    text-align: center;
+}
+
+.sheduletableth {
+    padding: 10px;
+    background-color: #787878;
+    color: #ffffff;
+}
+
+.sheduletabletd {
+    padding: 8px;
+    background-color: #eeeeee;
+}
+
+.sheduledetailadressinfo {
+    font-family: 'PT Mono', monospace;
+    font-weight: bold;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.sheduledetailadressdata {
+    font-family: 'PT Mono', monospace;
+    padding: 10px;
+}
+
+.sheduledetailadresshowto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.sheduledata {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------HRAM---------------------------*/
+
+.hramtodayimg {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.hramhistorydata {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.hramhistory {
+    text-align: center;
+    margin: 10px;
+}
+
+.hramtodayimgdata {
+    width: 50%;
+    padding: 5px;
+}
+
+.hramhistoryimgdata {
+    width: 50%;
+    padding: 5px;
+}
+
+/*-------------------- FOOTER -------------------*/
+
+#footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    grid-area: ft;
+    text-align: center;
+}
+
+.footerblago {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    padding: 15px;
+}
+
+.footercopy {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    margin-top: 30px;
+    padding: 15px;
+}

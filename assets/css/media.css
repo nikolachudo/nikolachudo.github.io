@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+@media (max-width: 420px) {
+    /*---INDEX---*/
+    #content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "hd"
+            "cn"
+            "ft";
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        width: 395px;
+        margin: 21px auto;
+        background-color: #ffffff;
+    }
+
+    #head {
+        grid-area: hd;
+        font-family: Roboto, sans-serif;
+        width: 395px;
+    }
+
+    #main {
+        grid-area: mn;
+        font-family: Roboto, sans-serif;
+        position: relative;
+        width: 395px;
+    }
+
+    #footer {
+        grid-area: ft;
+        text-align: center;
+        width: 395px;
+    }
+
+    #maindata {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+        "md"
+        "as";
+    }
+
+    #maindatalist {
+        grid-area: md;
+        border-right: 1px solid #dddddd;
+        width: 385px;
+    }
+
+    .navul {
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navulli {
+        list-style-type: none;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+
+    .cardnewsblockmeta {
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+
+    .newsimg {
+        width: 365px;
+        height: 250px;
+        vertical-align: middle;
+        object-fit: cover;
+    }
+
+    .cardnewstxt {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 30px;
+    }
+
+    .cardnews {
+        margin-top: 0;
+    }
+
+    .cardnewsslider {
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .cardnewssliderimg {
+        width: 360px;
+        height: 240px;
+        object-fit: cover;
+        vertical-align: revert;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+
+    /*----HOTSTRING----*/
+    .marqueestroka {
+        width: 375px;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: CyrillicOldBold, serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+        letter-spacing: 3px;
+    }
+
+    /*---PAGINATION---*/
+    #pagination {
+        text-align: center;
+        margin-top: 30px;
+        width: 385px;
+    }
+
+    #calendarside {
+        color: #787878;
+        font-family: 'Lora', sans-serif;
+        text-align: center;
+        width: 380px;
+    }
+
+    #newspatriarh {
+        width: 380px;
+    }
+
+    #newseparhia {
+        width: 380px;
+    }
+
+    .newslentalistul {
+        padding-left: 10px;
+    }
+
+    #searchside {
+        width: 385px;
+    }
+
+    /*---POST---*/
+    .postimg {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .posttxt {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #787878;
+    }
+
+    .postpagination {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas: "pgl pgr";
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    /*---DONATION---*/
+
+    .donationyandexdataimg {
+        width: 100%;
+        height: 420px;
+        margin-left: 0;
+    }
+
+    /*---TREBY---*/
+    .trebyforminfonameinputdesk {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "tn"
+            "tc";
+        grid-column-gap: 5px;
+    }
+
+    .trebycardheadtype {
+        font-family: 'Roboto', serif;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        color: #EE3A29;
+        position: absolute;
+        margin-left: 110px;
+        margin-top: -36px;
+    }
+
+    .trebycardfootertxt {
+        font-family: 'Roboto', serif;
+        font-size: 1.1em;
+        font-weight: bold;
+        width: 320px;
+        color: #EE3A29;
+        padding-top: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .rowname {
+        font-family: 'Roboto', serif;
+        font-size: 1.1em;
+        font-weight: bold;
+        width: 320px;
+        color: #EE3A29;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #EE3A29;
+        text-transform: uppercase;
+        text-align: center;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        margin-left: 30px;
+    }
+
+    .ribbon {
+        position: absolute;
+        margin-top: -241px;
+        margin-left: 275px;
+    }
+
+    #bm-ribbon {
+        width: 100px;
+        height: 55px;
+        margin: 50px auto 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #bm-ribbon .base {
+        height: 30px;
+        width: 50px;
+        background: rgb(199,59,60);
+        background: -moz-linear-gradient(top, rgba(199,59,60,1) 0%, rgba(184,32,31,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(199,59,60,1)), color-stop(100%,rgba(184,32,31,1)));
+        background: -webkit-linear-gradient(top, rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+        background: -o-linear-gradient(top, rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+        background: -ms-linear-gradient(top, rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+        background: linear-gradient(top, rgba(199,59,60,1) 0%,rgba(184,32,31,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c73b3c', endColorstr='#b8201f',GradientType=0 );
+        position: relative;
+        z-index: 2;
+    }
+
+    #bm-ribbon .inset {
+        width: 100px;
+        height: 53px;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        z-index: 5;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background: rgba(0,0,0,0.3);
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    }
+
+    #bm-ribbon .left_corner {
+        width: 50px;
+        height: 50px;
+        background: #b8201f;
+        position: absolute;
+        bottom: 63px;
+        left: -25px;
+        z-index: 1;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #bm-ribbon .right_corner {
+        width: 50px;
+        height: 50px;
+        background: #b8201f;
+        position: absolute;
+        bottom: 63px;
+        right: -25px;
+        z-index: 1;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #bm-ribbon .container {
+        position: relative;
+        width: 50px;
+        height: 110px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-left: 1px solid #631a15;
+        border-right: 1px solid #631a15;
+    }
+
+    #bm-ribbon .base:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 39px;
+        left: 5px;
+        height: 50px;
+        border-left: 1px dashed #da5050;
+        border-right: 1px dashed #da5050;
+    }
+
+    #bm-ribbon .base:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 38px;
+        left: 6px;
+        height: 50px;
+        border-left: 1px dashed #631a15;
+        border-right: 1px dashed #631a15;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+
+}
