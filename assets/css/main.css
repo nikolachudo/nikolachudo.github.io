@@ -263,6 +263,14 @@
     width: 50%;
     padding: 5px;
 }
+/*-------------------- PASTYR -------------------*/
+
+.contentpastyr {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 12px;
+}
 
 /*-------------------- FOOTER -------------------*/
 
